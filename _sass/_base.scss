@@ -1,3 +1,19 @@
+@mixin bp($point) {
+	 @if $point == xlg {
+		 @media screen and (min-width: 113em) { @content ; }
+	}
+	 @else if $point == lg {
+		 @media screen and (min-width: 85em) { @content ; }
+	}
+		@else if $point == md {
+		 @media screen and (min-width: 64em) { @content ; }
+	}
+	 @else if $point == sm {
+		 @media screen and (min-width: 48em)  { @content ; }
+	}
+}
+
+
 /**
  * Reset some basic elements
  */
@@ -79,12 +95,56 @@ li {
 /**
  * Headings
  */
+h1, h2, h3, h4, h5, h6 {
+	line-height: $base-heading-line-height;
+}
+
 h1, h2 {
     font-weight: $base-font-heading-weight;
 }
 
 h3, h4, h5, h6 {
   font-weight: $base-font-weight;
+}
+
+h1 {
+	font-size: $base-font-h1-size*0.65;
+
+	@include bp(sm) {
+		font-size: $base-font-h1-size*0.85;
+	};
+
+	@include bp(md) {
+		font-size: $base-font-h1-size;
+	};
+}
+
+h2 {
+	font-size: $base-font-h2-size*0.65;
+
+	@include bp(sm) {
+		font-size: $base-font-h2-size*0.85;
+	};
+
+	@include bp(md) {
+		font-size: $base-font-h2-size;
+	};
+}
+
+h3 {
+	font-size: $base-font-h3-size;
+}
+
+h4 {
+	font-size: $base-font-h4-size;
+}
+
+h5 {
+	font-size: $base-font-h5-size;
+}
+
+h6 {
+	font-size: $base-font-h6-size;
 }
 
 
@@ -109,6 +169,15 @@ a {
  * Clearfix
  */
 %clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.clearfix {
 
     &:after {
         content: "";
@@ -148,7 +217,7 @@ a {
 }
 
 ::selection {
-    background: #fff;
+    background: #cde9e3;
     text-shadow: none;
 }
 

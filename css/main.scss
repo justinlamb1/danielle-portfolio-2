@@ -9,22 +9,8 @@
 @import
         "normalize.css",
         "variables",
+        "utilities",
         "base",
         "layout",
         "syntax-highlighting"
 ;
-
-@mixin breakpoint($point) {
-	 @if $point == xlg {
-		 @media screen and (min-width: 120em) { @content ; }
-	}
-	 @else if $point == lg {
-		 @media screen and (min-width: 120em) { @content ; }
-	}
-		@else if $point == md {
-		 @media screen and (min-width: 85.375em) { @content ; }
-	}
-	 @else if $point == sm {
-		 @media screen and (min-width: 48em)  { @content ; }
-	}
-}

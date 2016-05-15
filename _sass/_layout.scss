@@ -1,0 +1,142 @@
+.container {
+  margin: 0 15px;
+  @extend %clearfix;
+
+  @include bp(sm) {
+    margin: 0 4%;
+  }
+
+  @include bp(md) {
+    margin: 0 8%;
+  }
+
+  @include bp(lg) {
+    margin: 0 12%;
+  }
+}
+
+// Header
+.header {
+  font-size: 1rem;
+  padding: 0.625em 0;
+  @extend %clearfix;
+
+  @include bp(sm) {
+    font-size: 1.125rem;
+    padding: 0.625em*2 0;
+  }
+
+  @include bp(lg) {
+    font-size: 1.5rem;
+  }
+
+  &__logo {
+    margin-bottom: 0.625em*1.5;
+
+    @include bp(sm) {
+      float: left;
+      width: 50%;
+      margin-bottom: 0;
+    }
+
+    &__site-name {
+      font-size: 1.5em;
+      color: $brand-color;
+      margin-bottom: 0;
+      display: inline-block;
+      margin-right: 0.3125em;
+    }
+
+    &__job-title {
+      font-size: 1em;
+      font-style: italic;
+      color: $text-color-light;
+      margin-bottom: 0;
+      display: inline-block;
+    }
+  }
+
+  &__navigation {
+    @extend %clearfix;
+
+    @include bp(sm) {
+      float: left;
+      width: 50%;
+      padding-top: 0.5em;
+    }
+
+    &__list {
+      float: left;
+      margin: 0;
+
+      @include bp(sm) {
+        float: right;
+      }
+
+        &__link {
+        list-style: none;
+        font-size: 1em;
+        float: left;
+        margin-right: 2em;
+
+        @include bp(md) {
+          margin-right: 0;
+          margin-left: 3em;
+        }
+      }
+    }
+  }
+}
+// Header end
+
+// Introduction
+.introduction {
+  font-size: 1rem;
+  margin-top: 0.9375em;
+  margin-bottom: 2.9375em;
+
+  @include bp(sm) {
+    font-size: 1.125rem;
+    max-width: 90%;
+  }
+
+  @include bp(md) {
+    font-size: 1.15rem;
+    max-width: 100%;
+  }
+
+  @include bp(lg) {
+    font-size: 1.25rem;
+  }
+
+  &__text--large {
+    margin-bottom: 0.625em;
+  }
+
+  &__text--italic {
+    font-size: 1em;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.5;
+  }
+}
+// Introduction end
+
+// Portfolio
+.portfolio {
+  font-size: 1rem;
+  background-color: $grey-color;
+  padding-top: 3em;
+  padding-bottom: 3em;
+
+  @include bp(sm) {
+    font-size: 1.125rem;
+  }
+
+  &__wrapper {
+
+    &__card {
+
+    }
+  }
+}
