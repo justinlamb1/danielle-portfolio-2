@@ -68,6 +68,7 @@
     &__list {
       float: left;
       margin: 0;
+      font-weight: $base-font-weight;
 
       @include bp(sm) {
         float: right;
