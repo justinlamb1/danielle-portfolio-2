@@ -146,6 +146,7 @@
   }
 
   &__wrapper {
+    display: -webkit-box;
     display: -webkit-flex;
     display: flex;
     flex-direction: column;
