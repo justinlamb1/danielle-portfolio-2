@@ -146,15 +146,12 @@
   }
 
   &__wrapper {
-    display: -webkit-flex;
     display: flex;
     flex-direction: column;
-    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
 
     @include bp(sm) {
       flex-direction: row;
-      -webkit-justify-content: space-between;
       justify-content: space-between;
     }
 
