@@ -146,15 +146,15 @@
   }
 
   &__wrapper {
-    display: flex;
     display: -webkit-flex;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 
     @include bp(sm) {
       flex-direction: row;
-      justify-content: space-between;
       -webkit-justify-content: space-between;
+      justify-content: space-between;
     }
 
     &__card {
