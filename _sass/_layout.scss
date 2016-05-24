@@ -45,6 +45,7 @@
       margin-bottom: 0;
       display: inline-block;
       margin-right: 0.3125em;
+      font-weight: $base-font-weight;
     }
 
     &__job-title {
@@ -53,6 +54,7 @@
       color: $text-color-light;
       margin-bottom: 0;
       display: inline-block;
+      font-weight: $base-font-weight;
     }
   }
 
