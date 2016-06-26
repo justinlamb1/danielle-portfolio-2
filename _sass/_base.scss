@@ -175,6 +175,39 @@ a {
     }
 }
 
+.button {
+	display: inline-block;
+	border-radius: 5px;
+	background-color: $brand-color;
+	color: $white;
+	text-decoration: none;
+	padding: 0.625em 0.625em;
+	-webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.25);
+	box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.25);
+
+	&:hover {
+		text-decoration: none;
+	}
+
+	@include bp(sm) {
+		transition: margin-top 300ms ease;
+		transition: box-shadow 100ms linear;
+
+		&:hover {
+			margin-top: 2px;
+			-webkit-box-shadow: none;
+			-moz-box-shadow: none;
+			box-shadow: none;
+		}
+	}
+}
+
+.button-white {
+	background-color: $white !important;
+	color: $text-color !important;
+}
+
 /**
  * Clearfix
  */

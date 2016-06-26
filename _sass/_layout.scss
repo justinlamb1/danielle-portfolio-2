@@ -252,3 +252,33 @@
   }
 }
 // End of clients
+
+// Testimonials
+.testimonials {
+  background-color: $grey-color;
+  padding-top: 3.75em;
+  padding-bottom: 3.75em;
+
+  &__wrapper {
+    max-width: 34.375em;
+    margin: 0 auto;
+    text-align: center;
+
+    &__quote {
+      font-size: 1.125em;
+    }
+
+    &__author {
+      font-style: italic;
+    }
+  }
+}
+// End of testimonials
+
+// Contact
+.contact {
+  background-color: $brand-color;
+  padding-top: 3.75em;
+  padding-bottom: 3.75em;
+  text-align: center;
+}
