@@ -223,3 +223,32 @@
     }
   }
 }
+// End of portfolio
+
+// Clients
+.clients {
+  padding-top: 3.125em;
+  padding-bottom: 3.125em;
+
+  h1 {
+    text-align: center;
+    font-size: 1.125em;
+    font-weight: $base-font-weight;
+  }
+
+  &__logo-wrapper {
+    padding-top: 1.25em;
+    padding-bottom: 1.25em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__logo {
+      @include bp(sm) {
+        margin-right: 0.9375em;
+        margin-bottom: 1.25em;
+      }
+    }
+  }
+}
+// End of clients
