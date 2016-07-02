@@ -281,4 +281,21 @@
   padding-top: 3.75em;
   padding-bottom: 3.75em;
   text-align: center;
+
+  &__title {
+    font-weight: 300;
+  }
+
+  &__text {
+    font-style: italic;
+  }
+}
+// End of contact
+
+// Copyright
+.copyright {
+  color: $text-color-light;
+  text-align: center;
+  padding-top: 1.25em;
+  padding-bottom: 0.625em;
 }
