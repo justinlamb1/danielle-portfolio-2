@@ -304,3 +304,26 @@
   }
 }
 // End of copyright
+
+// Case study
+.container--narrow {
+  margin: 0 auto;
+  max-width: 43.75em;
+  padding: 0 15px;
+}
+
+.case-study {
+  &__hero-wrapper {
+    height: calc(95vh - 100px);
+    overflow: hidden;
+    position: relative;
+    background: url("/images/photo-1465326117523-6450112b60b2.jpg") no-repeat center center;
+    background-size: cover;
+
+    &__title {
+      position: absolute;
+      bottom: 25px;
+      color: $white;
+    }
+  }
+}
