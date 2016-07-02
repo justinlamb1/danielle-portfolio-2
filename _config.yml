@@ -9,7 +9,7 @@
 title: Danielle Lamb, Graphic Designer, Cambridgeshire, Leicestershire and Lincolnshire
 email: danielle.lamb@icloud.com
 description: I am a multidisciplinary designer focusing on print, art direction, infographics and branding.
-baseurl: "http://justinlamb1.github.io/danielle-portfolio-2/" # the subpath of your site, e.g. /blog
+baseurl: "http://justinlamb1.github.io/danielle-portfolio-2" # the subpath of your site, e.g. /blog
 url: "http://justinlamb1.github.io/danielle-portfolio-2/" # the base hostname & protocol for your site
 
 # Build settings
