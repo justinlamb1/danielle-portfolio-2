@@ -1,6 +1,5 @@
 .container {
   margin: 0 15px;
-  @extend %clearfix;
 
   @include bp(sm) {
     margin: 0 4%;
@@ -12,6 +11,16 @@
 
   @include bp(lg) {
     margin: 0 12%;
+  }
+
+  &--medium {
+  }
+
+  &--small {
+    max-width: 43.75em;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -306,24 +315,21 @@
 // End of copyright
 
 // Case study
-.container--narrow {
-  margin: 0 auto;
-  max-width: 43.75em;
-  padding: 0 15px;
-}
-
 .case-study {
-  &__hero-wrapper {
-    height: calc(95vh - 100px);
-    overflow: hidden;
-    position: relative;
-    background: url("/images/photo-1465326117523-6450112b60b2.jpg") no-repeat center center;
-    background-size: cover;
+  background-color: $grey-color;
+  padding-top: 25px;
+  padding-bottom: 25px;
 
-    &__title {
-      position: absolute;
-      bottom: 25px;
-      color: $white;
-    }
+  &__inner {
+    background-color: $white;
+    border-radius: 5px;
+    overflow: hidden;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  &__full-width-image {
+    width: 100%;
+    margin-bottom: 3.125em;
   }
 }
