@@ -5,3 +5,17 @@
 .font-italic {
   font-style: italic !important;
 }
+
+.u-pos-left {
+  @include bp(md) {
+    position: relative !important;
+    right: 35px !important;
+  }
+}
+
+.u-pos-right {
+  @include bp(md) {
+    position: relative !important;
+    left: 35px !important;
+  }
+}

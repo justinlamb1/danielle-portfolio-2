@@ -326,10 +326,37 @@
     overflow: hidden;
     max-width: 1440px;
     margin: 0 auto;
+    padding-bottom: 50px;
   }
 
-  &__full-width-image {
+  &__image {
     width: 100%;
-    margin-bottom: 3.125em;
+
+    &--full-width {
+      margin-bottom: 0.9375em;
+
+      @include bp(md) {
+        margin-bottom: 3.125em;
+      }
+    }
+
+    &--inline {
+      margin-top: 0.9375em;
+      margin-bottom: 1.875em;
+    }
+  }
+
+  &__pull-quote {
+    color: $brand-color;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1.875em;
+  }
+
+  .button {
+    margin-top: 1.5625em;
+    margin-bottom: 0.9375em;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
